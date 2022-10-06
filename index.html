@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="./index.css" />
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<header id="menu">
+
+<h1>Welcome to Art Show</h1>
+</header>
+<div id="test">Test me! </div>
+<div>
+    <li></li>
+</div>
+<img>
+
+<ul id="art-list" class="cards">
+  <!--Art pieces here-->
+</ul>
+
+<p>Become a patron of the arts!</p>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+<p>I would like to donate:</p>
+  <input type="radio" id="25" name="fav_language" value="HTML">
+  <label for="25">$25</label><br>
+  <input type="radio" id="50" name="fav_language" value="CSS">
+  <label for="css">$50</label><br>
+  <input type="radio" id="100" name="fav_language" value="JavaScript">
+  <label for="javascript">$100</label>
+</form>
+<br>
+<form>
+  <input type="submit" value="Submit">
+  <input type="reset">
+</form>
+
+<h2>Patrons</h2>
+
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Donation</th>
+  </tr>
+  <tr>
+    <td>Kylo</td>
+    <td>Seedy</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Miles</td>
+    <td>RazorBeak</td>
+    <td>$25</td>
+  </tr>
+  <tr>
+    <td>Lunis</td>
+    <td>Chewer</td>
+    <td>$25</td>
+  </tr>
+  <tr>
+    <td>Darwin</td>
+    <td>the Hedgehog</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Rio</td>
+    <td>Prorok</td>
+    <td>$50</td>
+  </tr>
+  <tr>
+    <td>Ashley</td>
+    <td>Lavezzari</td>
+    <td>$50</td>
+  </tr>
+</table>
+
+
+
+<p>Please subscribe to our monthly newsletter.</p>
+<div class="container">
+<form id="art_form">
+<input id="new_form" type="text" placeholder="Your Email">
+<input type="submit" class="btn" value="Submit">
+
+</div>
+</body>
+</html>
+
+
