@@ -1,38 +1,17 @@
 {
-    "id": 1,
-    "first name": "Ashley",
-    "last name": "Lavezzari",
-    "donation": 50
- },
- {
-    "id": 2,
-    "first name": "Rio",
-    "last name": "Prorok",
-    "donation": 25
- }
- {
-    "id": 3,
-    "first name": "Darwin",
-    "last name": "the Hedgehog",
-    "donation": 25
- }
- {
-    "id": 4,
-    "first name": "Lunis",
-    "last name": "Chewer",
-    "donation": 25
- }
- {
-    "id": 5,
-    "first name": "Miles",
-    "last name": "RazorBeak",
-    "donation": 25
- }
- {
-    "id": 6,
-    "first name": "Kylo",
-    "last name": "Seedy",
-    "donation": 100
- }
- 
+    "artData" : [
+    {
+        "name": "Daisy1",
+        "imageUrl": "https://imgur.com/He7DA7Q",
+        "description": "book shaka laka",
+        "saves": 0
+    },
+    {
+        "name": "Daisy2",
+        "imageUrl": "https://imgur.com/He7DA7Q",
+        "description": "whatever",
+        "saves": 0
+    }
+    ]
+}
  
