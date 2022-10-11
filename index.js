@@ -1,4 +1,24 @@
-
+//render patrons
+function renderOnePatron(patronObj) {
+    //add patron to existing list
+    let outsideBox = document.createElement('tr')
+    let patronFName = document.createElement('td')
+    patronFName.textContent = patronObj.firstName
+    let patronLName = document.createElement('td')
+    patronLName.textContent = patronObj.lastName
+    let patronDonation = document.createElement('td')
+    patronDonation.textContent = patronObj.donation
+    //experiment
+    let documentFragment = document.createDocumentFragment();
+    documentFragment.appendChild(outsideBox)
+    outsideBox.appendChild(patronFName),
+    outsideBox.appendChild(patronLName),
+    outsideBox.appendChild(patronDonation),
+  
+    //add patron to DOM
+    document.querySelector('tbody').appendChild(documentFragment)
+ }
+ 
 
 //DOM render functions
 function renderOneArt(art) {
