@@ -1,4 +1,18 @@
-//render patrons
+//Event handlers
+function handleSubmit(e) {
+    e.preventDefault();
+    let patronObj = {
+        firstName:e.target.fname.value,
+        lastName:e.target.lname.value,
+        donation:e.target.donation.value
+    }
+    renderOnePatron(patronObj);
+    addPatron(patronObj);
+    let form = document.querySelector('form');
+    form.reset();
+ }
+ 
+ //render patrons
 function renderOnePatron(patronObj) {
     //add patron to existing list
     let outsideBox = document.createElement('tr')
