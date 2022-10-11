@@ -58,6 +58,12 @@ function renderOneArt(art) {
 
 //event listeners
 
+let btn = card.querySelectorAll('.buttons')
+btn.forEach(bttn => bttn.addEventListener('click', () => {
+    window.alert("Saved!")
+})
+)
+
 
 //initial render
 //get data and render our art to DOM
