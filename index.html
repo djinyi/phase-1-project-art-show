@@ -42,7 +42,6 @@ tr:nth-child(even) {
   }
 </style>
 
-
 <script defer src="./index.js"></script>
 </head>
 <body>
@@ -62,28 +61,20 @@ tr:nth-child(even) {
 
 
 <p>Become a patron of the arts!</p>
-<form action="/action_page.php">
+<form id="submit_patron">
   <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
+  <input type="text" id="fname" name="fname" placeholder="Bob"><br>
   <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-<p>I would like to donate:</p>
-  <input type="radio" id="25" name="fav_language" value="HTML">
-  <label for="25">$25</label><br>
-  <input type="radio" id="50" name="fav_language" value="CSS">
-  <label for="css">$50</label><br>
-  <input type="radio" id="100" name="fav_language" value="JavaScript">
-  <label for="javascript">$100</label>
-</form>
-<br>
-<form>
-  <input type="submit" value="Submit">
-  <input type="reset">
+  <input type="text" id="lname" name="lname" placeholder="Dylan"> <br>
+  <label for="donation">Donation:</label><br>
+  <input type="text" id="donation" name="donation" placeholder="$ Any Amount"><br><br>
+  <input type="submit" id="hello" value="Submit">
 </form>
 
-<h2>Patrons</h2>
+<h2>Our Patrons</h2>
 
 <table>
+  <tr></tr>
   <tr>
     <th>First Name</th>
     <th>Last Name</th>
@@ -120,14 +111,6 @@ tr:nth-child(even) {
     <td>$50</td>
   </tr>
 </table>
-
-
-
-<p>Please subscribe to our monthly newsletter.</p>
-<div class="container">
-<form id="art_form">
-<input id="new_form" type="text" placeholder="Your Email">
-<input type="submit" class="btn" value="Submit">
 
 </div>
 </body>

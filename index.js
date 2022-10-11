@@ -1,10 +1,12 @@
+
+
 //DOM render functions
 function renderOneArt(art) {
     //build art
     let card = document.createElement('li')
     card.class = 'card';
     card.innerHTML = `
-    <img src="https://www.artic.edu/iiif/2/${art.image_id}/full/843,/0/default.jpg">
+    <img class="hi" src="https://www.artic.edu/iiif/2/${art.image_id}/full/843,/0/default.jpg">
     <div class="content">
         <h4>${art.title}</h4>
         <p>
@@ -12,17 +14,15 @@ function renderOneArt(art) {
         </p>
         <p>${art.artist_display}</p>
     </div>
-    <div class="buttons">
-        <button>Donate $10 </button>
-    </div>
-    <div class="buttons">
-        <button>Save </button>
+    <div id="button_listen">
+        <button class="buttons" >Save </button><br>
+        <br>
     </div>
     `
     //add art to DOM
     document.querySelector('#art-list').appendChild(card)
-}
 
+//event listeners
 
 
 //initial render
@@ -42,6 +42,14 @@ function getAllArt() {
     .then(arts => arts.data.forEach(art => renderOneArt(art)))
 }
 
+
+document.querySelector('#submit_patron').addEventListener('submit', e => handleSubmit(e))
+
+
+
+
+
+
 //let firstDiv = document.getElementById('test');
 
 
@@ -59,5 +67,6 @@ function getAllArt() {
 //firstImage.append(mySecondTest);
 
 
-
-
+document.addEventListener('DOMContentLoaded', () =>{
+    console.log("HIIII")
+})
