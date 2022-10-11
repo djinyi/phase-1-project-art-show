@@ -11,9 +11,9 @@ function handleSubmit(e) {
     let form = document.querySelector('form');
     form.reset();
  }
- 
+  
  //render patrons
-function renderOnePatron(patronObj) {
+ function renderOnePatron(patronObj) {
     //add patron to existing list
     let outsideBox = document.createElement('tr')
     let patronFName = document.createElement('td')
@@ -32,10 +32,9 @@ function renderOnePatron(patronObj) {
     //add patron to DOM
     document.querySelector('tbody').appendChild(documentFragment)
  }
- 
-
-//DOM render functions
-function renderOneArt(art) {
+  
+ //DOM render functions
+ function renderOneArt(art) {
     //build art
     let card = document.createElement('li')
     card.class = 'card';
@@ -55,58 +54,84 @@ function renderOneArt(art) {
     `
     //add art to DOM
     document.querySelector('#art-list').appendChild(card)
-
-//event listeners
-
-let btn = card.querySelectorAll('.buttons')
-btn.forEach(bttn => bttn.addEventListener('click', () => {
-    window.alert("Saved!")
-})
-)
-
-
-//initial render
-//get data and render our art to DOM
-function initialize() {
+  
+ //event listeners
+  
+  
+    let btn = card.querySelectorAll('.buttons')
+    btn.forEach(bttn => bttn.addEventListener('click', () => {
+        window.alert("Saved!")
+    })
+    )
+  
+  
+  
+ let mOver = card.querySelectorAll('.hi')
+ mOver.forEach(over => over.addEventListener('mouseover', e => e.target.style.size = "32px")
+ )
+ }
+  
+  
+  
+ //initial render
+ //get data and render our art to DOM
+ function initialize() {
     getAllArt()
-}
-
-initialize();
-
-
-//fetch request
-//get fetch for all art
-function getAllArt() {
+ }
+  
+ initialize();
+  
+  
+ //fetch request
+ //get fetch for all art
+ function getAllArt() {
     fetch('https://api.artic.edu/api/v1/artworks?page=134&limit=10')
     .then(res => res.json())
     .then(arts => arts.data.forEach(art => renderOneArt(art)))
-}
-
-
-document.querySelector('#submit_patron').addEventListener('submit', e => handleSubmit(e))
-
-
-
-
-
-
-//let firstDiv = document.getElementById('test');
-
-
-//console.log(firstDiv);
-//let myTest = document.createElement("h1");
-//myTest.textContent = "Hells!"
-
-
-//firstDiv.append(myTest);
-
-
-//let mySecondTest = document.createElement("img");
-//mySecondTest.src = "https://imgur.com/a/X5LPszC";
-//let firstImage = document.getElementById('test-b');
-//firstImage.append(mySecondTest);
-
-
-document.addEventListener('DOMContentLoaded', () =>{
+ }
+  
+ //for patron fetch
+ function addPatron(patronObj) {
+    fetch('http://localhost:3000/artData', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body:JSON.stringify(patronObj)
+    })
+    .then(res => res.json())
+    .then(patron => console.log(patron))
+ }
+  
+  
+  
+  
+  
+ document.querySelector('#submit_patron').addEventListener('submit', e => handleSubmit(e))
+  
+  
+  
+  
+  
+  
+ //let firstDiv = document.getElementById('test');
+  
+  
+ //console.log(firstDiv);
+ //let myTest = document.createElement("h1");
+ //myTest.textContent = "Hells!"
+  
+  
+ //firstDiv.append(myTest);
+  
+  
+ //let mySecondTest = document.createElement("img");
+ //mySecondTest.src = "https://imgur.com/a/X5LPszC";
+ //let firstImage = document.getElementById('test-b');
+ //firstImage.append(mySecondTest);
+  
+  
+ document.addEventListener('DOMContentLoaded', () =>{
     console.log("HIIII")
-})
+ })
+ 
