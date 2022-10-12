@@ -1,8 +1,6 @@
-  /* On mouse-over, add a deeper shadow */
 .cards {
     text-align: center;
 }   
-
 
 table {
     font-family: arial, sans-serif;
@@ -20,8 +18,7 @@ tr:nth-child(even) {
     background-color: #dddddd;
   }
 
-  .center {
-    
+.center {    
     border: 3px solid green;
   }
 
@@ -29,9 +26,6 @@ p, form {
     text-align: center;
 }
 
-/*
-selects all headers of type h3 in the document (e.g. <h3>Type selectors</h3>)
-*/
 h1, h2 {
     color: red;
     text-align: center;
@@ -39,21 +33,4 @@ h1, h2 {
 
 ul {
     list-style-type: none;
-}
-/*
-selects all paragraph elements in the document (e.g. <p>Type selectors are used
-to...</p>)
-*/
-p {
-}
-
-/*
-select all elements that have the 'important-topic' classname (e.g. <h2 class='important-topic'>
-and <p class='important-topic'>)
-*/
-
-/*
-selects the HTML element with the id 'main-header' (e.g. <h1 id='main-header'>)
-*/
-#main-header {
 }
