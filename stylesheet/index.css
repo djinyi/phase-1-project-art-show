@@ -24,18 +24,17 @@ tr:nth-child(even) {
     
     border: 3px solid green;
   }
-/*
-selects all anchor tag elements in the document (e.g. <a href="page-link.html">Page Link</a>)
-*/
-a {
+
+p, form {
     text-align: center;
 }
 
 /*
 selects all headers of type h3 in the document (e.g. <h3>Type selectors</h3>)
 */
-h1 {
+h1, h2 {
     color: red;
+    text-align: center;
 }
 
 ul {
