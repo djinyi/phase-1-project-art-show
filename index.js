@@ -41,10 +41,7 @@ function handleSubmit(e) {
     card.innerHTML = `
     <img class="hi" src="https://www.artic.edu/iiif/2/${art.image_id}/full/843,/0/default.jpg">
     <div class="content">
-        <h4>${art.title}</h4>
-        <p>
-            ID <span class="save-count">${art.id}</span> Save
-        </p>
+        <h4>${art.title}</h4><br<
         <p>${art.artist_display}</p>
     </div>
     <div id="button_listen">
