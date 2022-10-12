@@ -1,112 +1,40 @@
 {
   "artData": [
     {
-      "id": 0,
-      "first name": "Daisy1",
-      "last name": "https://imgur.com/He7DA7Q",
-      "donation": "book shaka laka"
+      "firstName": "Ashley",
+      "lastName": "Lavezzari",
+      "donation": "$50",
+      "id": 1
     },
     {
-      "id": 1,
-      "first name": "Daisy2",
-      "last name": "https://imgur.com/He7DA7Q",
-      "donation": "whatever"
-    },
-    {
-      "firstName": "Daisy",
-      "lastName": "Yi",
-      "donation": "$100",
+      "firstName": "Rio",
+      "lastName": "Prorok",
+      "donation": "$50",
       "id": 2
     },
     {
-      "firstName": "Daisy",
-      "lastName": "Yi",
+      "firstName": "Darwin",
+      "lastName": "the Hedgehog",
       "donation": "$100",
       "id": 3
     },
     {
-      "firstName": "Daisy",
-      "lastName": "Yi",
-      "donation": "$100",
+      "firstName": "Lunis",
+      "lastName": "Chewer",
+      "donation": "$25",
       "id": 4
     },
     {
-      "firstName": "Daisy",
-      "lastName": "Yi",
-      "donation": "$100",
+      "firstName": "Miles",
+      "lastName": "RazorBeak",
+      "donation": "$25",
       "id": 5
     },
     {
-      "firstName": "",
-      "lastName": "",
-      "donation": "",
+      "firstName": "Kylo",
+      "lastName": "Seedy",
+      "donation": "$100",
       "id": 6
-    },
-    {
-      "firstName": "Daisy",
-      "lastName": "Yi",
-      "donation": "$100",
-      "id": 7
-    },
-    {
-      "firstName": "Daisy",
-      "lastName": "Yi",
-      "donation": "$100",
-      "id": 8
-    },
-    {
-      "firstName": "Daisy",
-      "lastName": "Yi",
-      "donation": "$100",
-      "id": 9
-    },
-    {
-      "firstName": "Daisy",
-      "lastName": "Yi",
-      "donation": "$100",
-      "id": 10
-    },
-    {
-      "firstName": "Daisy",
-      "lastName": "Yi",
-      "donation": "$100",
-      "id": 11
-    },
-    {
-      "firstName": "Daisy",
-      "lastName": "Yi",
-      "donation": "$100",
-      "id": 12
-    },
-    {
-      "firstName": "Daisy",
-      "lastName": "Yi",
-      "donation": "$100",
-      "id": 13
-    },
-    {
-      "firstName": "Daisy",
-      "lastName": "Yi",
-      "donation": "$100",
-      "id": 14
-    },
-    {
-      "firstName": "fr",
-      "lastName": "fr",
-      "donation": "15",
-      "id": 15
-    },
-    {
-      "firstName": "Reset",
-      "lastName": "This",
-      "donation": "Tho",
-      "id": 16
-    },
-    {
-      "firstName": "Is",
-      "lastName": "This Reset",
-      "donation": "$100",
-      "id": 17
     }
   ]
 }
