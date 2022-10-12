@@ -1,21 +1,10 @@
-
-<style>
-.card {
-    display: grid;
-    grid-template-rows: max-content 200px 1fr;
-}
-  
   /* On mouse-over, add a deeper shadow */
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  /* Add some padding inside the card container */
-  .container {
-    padding: 2px 16px;
-  }
+.cards {
+    text-align: center;
+}   
 
-  table {
+
+table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
@@ -32,7 +21,40 @@ tr:nth-child(even) {
   }
 
   .center {
-    text-align: center;
+    
     border: 3px solid green;
   }
-</style>
+/*
+selects all anchor tag elements in the document (e.g. <a href="page-link.html">Page Link</a>)
+*/
+a {
+    text-align: center;
+}
+
+/*
+selects all headers of type h3 in the document (e.g. <h3>Type selectors</h3>)
+*/
+h1 {
+    color: red;
+}
+
+ul {
+    list-style-type: none;
+}
+/*
+selects all paragraph elements in the document (e.g. <p>Type selectors are used
+to...</p>)
+*/
+p {
+}
+
+/*
+select all elements that have the 'important-topic' classname (e.g. <h2 class='important-topic'>
+and <p class='important-topic'>)
+*/
+
+/*
+selects the HTML element with the id 'main-header' (e.g. <h1 id='main-header'>)
+*/
+#main-header {
+}

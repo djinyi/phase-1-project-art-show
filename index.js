@@ -67,7 +67,7 @@ function handleSubmit(e) {
   
   
  let mOver = card.querySelectorAll('.hi')
- mOver.forEach(over => over.addEventListener('mouseover', e => e.target.style.size = "32px")
+ mOver.forEach(over => over.addEventListener('mouseover', e => e.target.style.border= "solid")
  )
  }
   
