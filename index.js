@@ -41,7 +41,7 @@ function handleSubmit(e) {
     card.innerHTML = `
     <img class="hi" src="https://www.artic.edu/iiif/2/${art.image_id}/full/843,/0/default.jpg">
     <div class="content">
-        <h4>${art.title}</h4><br<
+        <h4>${art.title}</h4>
         <p>${art.artist_display}</p>
     </div>
     <div id="button_listen">
@@ -106,29 +106,5 @@ function handleSubmit(e) {
   
  document.querySelector('#submit_patron').addEventListener('submit', e => handleSubmit(e))
   
-  
-  
-  
-  
-  
- //let firstDiv = document.getElementById('test');
-  
-  
- //console.log(firstDiv);
- //let myTest = document.createElement("h1");
- //myTest.textContent = "Hells!"
-  
-  
- //firstDiv.append(myTest);
-  
-  
- //let mySecondTest = document.createElement("img");
- //mySecondTest.src = "https://imgur.com/a/X5LPszC";
- //let firstImage = document.getElementById('test-b');
- //firstImage.append(mySecondTest);
-  
-  
- document.addEventListener('DOMContentLoaded', () =>{
-    console.log("HIIII")
- })
+
  
