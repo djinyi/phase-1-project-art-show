@@ -5,5 +5,3 @@ The Art Website Project is a [single page application](https://en.wikipedia.org/
 ## Features
 The Art Website Project provides a means of saving artworks, marking artworks that were viewed, and even allows users to become a patron of the arts with their generous donation.
 
-## Demo
-Here is a working live demo :
